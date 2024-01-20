@@ -51,3 +51,4 @@ return function(entry_point)
     
     return self
 end
+

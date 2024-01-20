@@ -1,5 +1,11 @@
 -- Class for extracting import function calls from source files
 return function(filename)
+    -- Ensuring that there is an empty blank line at the end of the source code.
+    -- If not, the bundled file will have endend and it will fail to run.
+    local file_append = io.open(filename, "a")
+    file_append:write("\n")
+    file_append:close()
+
     local file = io.open(filename, "r")
     if file == nil then
         error("File not found: " .. filename)
@@ -19,3 +25,4 @@ return function(filename)
     self.includes = included_files
     return self
 end
+

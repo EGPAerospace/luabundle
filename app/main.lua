@@ -17,3 +17,4 @@ return function(args)
     
     bundle.build_bundle(outfile)
 end
+
