@@ -1,2 +1,0 @@
-C:/ExternalLibraries/luabundle/build/CMakeFiles/ALL_BUILD.dir
-C:/ExternalLibraries/luabundle/build/CMakeFiles/ZERO_CHECK.dir
